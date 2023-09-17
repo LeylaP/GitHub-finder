@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css"
+      integrity="sha512-b2QcS5SsA8tZodcDtGRELiGv5SaKSk1vDHDaQRda0htPYWZ6046lr3kJ5bAAQdpV2mmA/4v0wQF9MyU6/pDIAg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <title>GitHub Finder</title>
+  </head>
+
+  <!-- d-flex align-items-center justify-content-between mx-4 text-light -->
+
+  <body class="bg-dark text-bg-dark">
+    <header class="navbar navbar-dark bg-dark">
+      <div class="container">
+        <a href="/" class="navbar-brand">Github Bulucu</a>
+        <button id="theme-btn" class="btn btn-sm btn-light">Koyu Mod</button>
+      </div>
+    </header>
+    <!-- ------------------------------------------ -->
+    <!-- Form Search alani -->
+    <main class="container">
+      <!-- Uyarilar JS den buraya gonderilecek -->
+      <div id="alert">
+        <!-- <div class="alert alert-danger">Kullanici bulunamadi</div> -->
+      </div>
+
+      <div class="border border-light p-4 mt-5 mx-4">
+        <h1>Github Kullanici Adini Ara</h1>
+        <p>Kullanici bilgilerine erismek icin bir kullanici adi gir.</p>
+        <div class="d-flex gap-3 p-3">
+          <input
+            id="search-input"
+            type="text"
+            class="form-control"
+            placeholder="Kullanici ismi...?"
+          />
+          <button id="search-btn" class="btn btn-primary btn-md">Ara</button>
+        </div>
+      </div>
+      <!-- ---------------------------------- -->
+
+      <!-- Github dan gelecek kullanici bilgi alani -->
+      <div id="profile" class="container">
+        <!-- ui.js ten aktarilacak -->
+      </div>
+
+      <!-- Repolar alani -->
+      <div class="container p-3" id="repos"></div>
+    </main>
+    <script src="./app.js" type="module"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
